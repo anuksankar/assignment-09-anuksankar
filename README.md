@@ -9,7 +9,8 @@
 - Your task: instrument your API server to catch and analyze these two
 event types.
 - This task will be spread out over the last four assignments (9-12).
-___________________________________________________________________________________________________
+
+---
 
 Assignment 09
 
@@ -25,23 +26,6 @@ Assignment 09
   * The output (if there is any)
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	* once you've run the example on your terminal
 	  * Run `history > <user-name>-history.txt`
 	  * Save the relevant portion of your history as `<user-name>-annotations.md`
