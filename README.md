@@ -20,12 +20,11 @@ event types.
 ### Turn in your `/assignment-09-<user-name>/README.md` file. It should include:
 1) A summary type explanation of the example. 
   * For example, for Week 6's activity, a summary would be: "We spun up a cluster with kafka, zookeeper, and the mids container. Then we published and consumed messages with kafka."
-2) your `docker-compose.yml` 
-3) Each important step in the process. For each step, include:
+2) Your `docker-compose.yml`
+3) Source code for the flask application(s) used.
+4) Each important step in the process. For each step, include:
   * The command(s) 
   * The output (if there is any)
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
   * Examples of generated events
-
-### Turn in the python code for the flask application(s) used.
