@@ -12,12 +12,12 @@ event types.
 
 ---
 
-Assignment 09
+# Assignment 09
 
-### Follow the steps we did in class 
+## Follow the steps we did in class 
 - for both the simple flask app and the more complex one.
 
-#### Turn in your `/assignment-09-<user-name>/README.md` file. It should include:
+### Turn in your `/assignment-09-<user-name>/README.md` file. It should include:
 1) A summary type explanation of the example. 
   * For example, for Week 6's activity, a summary would be: "We spun up a cluster with kafka, zookeeper, and the mids container. Then we published and consumed messages with kafka."
 2) your `docker-compose.yml` 
@@ -26,7 +26,6 @@ Assignment 09
   * The output (if there is any)
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
-	* once you've run the example on your terminal
-	  * Run `history > <user-name>-history.txt`
-	  * Save the relevant portion of your history as `<user-name>-annotations.md`
-	  * Annotate the file with explanations of what you were doing at each point.
+  * Please be sure this includes snippets with examples of generated events
+
+### Turn in the python code for the flask application(s) used.
