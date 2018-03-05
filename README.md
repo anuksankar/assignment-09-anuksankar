@@ -24,7 +24,6 @@ event types.
 3) Source code for the flask application(s) used.
 4) Each important step in the process. For each step, include:
   * The command(s) 
-  * The output (if there is any)
+  * The output (if there is any).  Be sure to include examples of generated events when available.
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
-  * Examples of generated events
