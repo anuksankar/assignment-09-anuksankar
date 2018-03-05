@@ -26,6 +26,6 @@ event types.
   * The output (if there is any)
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
-  * Please be sure this includes snippets with examples of generated events
+  * Examples of generated events
 
 ### Turn in the python code for the flask application(s) used.
