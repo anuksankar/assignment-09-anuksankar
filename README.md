@@ -27,3 +27,7 @@ event types.
   * The output (if there is any).  Be sure to include examples of generated events when available.
   * An explanation for what it achieves 
     * The explanation should be fairly detailed, e.g., instead of "publish to kafka" say what you're publishing, where it's coming from, going to etc.
+
+### Turn in the `docker-compose.yml` file you used for this assignment.
+
+### Turn in any source code used for this assignment (the flask applications in this assignment).
