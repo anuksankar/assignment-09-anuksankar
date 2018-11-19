@@ -206,7 +206,7 @@ def join_guild():
     
 ```
 We have added "from kafka import KafkaProducer" and also the "event_logger.send()" which will 
-produce the messages to be consumed by kafkacat.
+produce and send the events to be consumed by kafkacat.
 
 Run it
 ```
@@ -244,7 +244,8 @@ Displays
 Joined a Guild!
 ```
 Checking the kafka window after testing a few times
-``
+
+```
 127.0.0.1 - - [18/Nov/2018 23:28:31] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [18/Nov/2018 23:29:40] "GET /purchase_a_sword HTTP/1.1" 200 -
 127.0.0.1 - - [18/Nov/2018 23:29:57] "GET /purchase_a_sword HTTP/1.1" 200 -
@@ -252,17 +253,19 @@ Checking the kafka window after testing a few times
 127.0.0.1 - - [18/Nov/2018 23:31:05] "GET /purchase_a_sword HTTP/1.1" 200 -
 127.0.0.1 - - [18/Nov/2018 23:31:10] "GET /join_a_guild HTTP/1.1" 200 -
 127.0.0.1 - - [18/Nov/2018 23:31:14] "GET /purchase_a_sword HTTP/1.1" 200 -
+
 ```
 
 Read from kafka
 Use kafkacat to consume events from the events topic
+
 ```
 docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e"
 ```
 displays
+
 ```
 default
-
 purchased_sword
 purchased_sword
 joined_guild
@@ -279,6 +282,7 @@ Tear the cluster down
 docker-compose down
 ```
 displays
+
 ```
 Stopping flaskwithkafka_kafka_1 ... done
 Stopping flaskwithkafka_mids_1 ... done
@@ -287,4 +291,5 @@ Removing flaskwithkafka_kafka_1 ... done
 Removing flaskwithkafka_mids_1 ... done
 Removing flaskwithkafka_zookeeper_1 ... done
 Removing network flaskwithkafka_default
+
 ```
