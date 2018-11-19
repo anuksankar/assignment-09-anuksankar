@@ -171,8 +171,9 @@ Testing the 2 events a few times displayed the following in the flask window
 
 ```
 Stop flask
+```
 Kill flask with control-C
-
+```
 
 Generate events from our webapp and add kafka into the mix 
 
@@ -204,6 +205,9 @@ def join_guild():
     return "\nJoined a Guild!\n"
     
 ```
+We have added "from kafka import KafkaProducer" and also the "event_logger.send()" which will 
+produce the messages to be consumed by kafkacat.
+
 Run it
 ```
 docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
@@ -242,12 +246,19 @@ Joined a Guild!
 Checking the kafka window after testing a few times
 ``
 127.0.0.1 - - [18/Nov/2018 23:28:31] "GET / HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:29:40] "GET /purchase_a_sword HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:29:57] "GET /purchase_a_sword HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:30:49] "GET /join_a_guild HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:31:05] "GET /purchase_a_sword HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:31:10] "GET /join_a_guild HTTP/1.1" 200 -
+
 127.0.0.1 - - [18/Nov/2018 23:31:14] "GET /purchase_a_sword HTTP/1.1" 200 -
+
 ```
 
 Read from kafka
