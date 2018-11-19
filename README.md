@@ -246,19 +246,12 @@ Joined a Guild!
 Checking the kafka window after testing a few times
 ``
 127.0.0.1 - - [18/Nov/2018 23:28:31] "GET / HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:29:40] "GET /purchase_a_sword HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:29:57] "GET /purchase_a_sword HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:30:49] "GET /join_a_guild HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:31:05] "GET /purchase_a_sword HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:31:10] "GET /join_a_guild HTTP/1.1" 200 -
-
 127.0.0.1 - - [18/Nov/2018 23:31:14] "GET /purchase_a_sword HTTP/1.1" 200 -
-
 ```
 
 Read from kafka
@@ -269,6 +262,7 @@ docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginn
 displays
 ```
 default
+
 purchased_sword
 purchased_sword
 joined_guild
